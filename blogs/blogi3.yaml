@@ -1,0 +1,4 @@
+blog_title: "Fooblog"
+content: "Making blogs has never been easier!
+Remember to run `update.py` after finishing.
+You can easily make a tool that watches the blog directory and runs `update.py` each time anything is modified under it."

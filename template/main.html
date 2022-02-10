@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>{{blogin_nimi}}</title>
+    </head>
+    <body>
+        <h1>{{blogin_nimi}}</h1>
+        {% for blog in blogs %}
+            <div class=blogpost>
+                <div class=head>
+                    <h1>{{blog["blog_title"]}}</h1>
+                    <p>{{blog["date"]}}</p>
+                </div>
+                <div class=content>
+                    {{blog["content"]}} 
+                </div>
+            </div>
+        {% endfor %}
+    </body>
+</html>
